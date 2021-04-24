@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/transFragment">
+
+    <fragment
+        android:id="@+id/transFragment"
+        android:name="com.example.expensetrackerstarter.TransFragment"
+        android:label="fragment_trans"
+        tools:layout="@layout/fragment_trans" >
+        <action
+            android:id="@+id/action_transFragment_to_formFragment"
+            app:destination="@id/formFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/formFragment"
+        android:name="com.example.expensetrackerstarter.FormFragment"
+        android:label="fragment_form"
+        tools:layout="@layout/fragment_form" />
+</navigation>
